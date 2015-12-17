@@ -1,0 +1,250 @@
+<% if flash[:alert] %>
+<div class="container">
+  <div class="alert alert-error">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Warning!</strong> <%= flash[:alert] %>.
+  </div>
+  <% end %>
+</div>
+
+<div class="banner">
+  <div class="video-container">
+    <div class="coverup"></div>
+      <video autoplay="" loop="" class="fillWidth">
+        <source src="https://waynabox.com/cover-video.mp4" type="video/mp4">
+      </video>
+  </div>
+  <div class="container">
+    <div class="titles">
+      <h1><span>Discover the cooler places</span></h1>
+      <h2><span>Custom your own guide,</span></h2>
+      <h2><span>Life is a trip</span></h2>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="search">
+      <div class="container">
+        <form id="eventForm" action="cities/pointsofinterest" method="get" class="form-horizontal" name="home-search" onsubmit="return validateForm()">
+          <fieldset class="form-group" id="outmargin">
+            <input class="form-control text" type="text" id="js-city" name="city" placeholder="Where do you wanto to go today?"/>
+            <div class="input-group input-append date middle" id="datePicker1">
+              <input type="text" class="form-control text middle" id ="js-date-arrival" name="arrival" placeholder="Arrival"/ >
+              <span class="input-group-addon add-on"><span class="glyphicon glyphicon-calendar"></span></span>
+            </div>
+            <div class="input-group input-append date middle" id="datePicker2">
+              <input type="text" class="form-control text middle" id="js-date-departure" name="departure" placeholder="Departure"/>
+              <span class="input-group-addon add-on"><span class="glyphicon glyphicon-calendar"></span></span>
+            </div>
+            <button class="btn btn-info js-submit" type="submit">Search</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<section id="first">
+  <div class="container">
+    <div class="discover">
+      <button class="btn btn-info btn-how-it-work" type="submit">How it work</button>
+      <h3><span>Explore the world</span></h3>
+      <h4>See where people are traveling, all around the world.</h4>
+      <div class="icon-holder">
+        <a href="#how-work" class="down-arrow"></a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="discovery-tiles">
+  <div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-12 rm-padding-sm">
+      <div class="discovery-card rm-padding-sm row-space-4 darken-on-hover " style="background-image:url('https://a0.muscache.com/ic/discover/397?interpolation=lanczos-none&amp;output-format=jpg&amp;output-quality=70&amp;v=33b4f2&amp;downsize=655px:326px');" data-sm-img-url="https://a0.muscache.com/ic/discover/397?interpolation=lanczos-none&amp;output-format=jpg&amp;output-quality=70&amp;v=33b4f2&amp;downsize=655px:326px">
+        <a href="#" class="link-reset" data-hook="discovery-card" data-id="Paris">
+          <div class="va-container va-container-v va-container-h">
+            <div class="va-middle text-center text-contrast">
+              <div class="h2">
+                <strong>París</strong>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12 rm-padding-sm row-space-4">
+      <div class="discovery-card rm-padding-sm row-space-4 darken-on-hover " style="background-image:url('https://a1.muscache.com/ic/discover/179?interpolation=lanczos-none&amp;output-format=jpg&amp;output-quality=70&amp;v=33b4f2&amp;downsize=326px:326px');" data-sm-img-url="https://a0.muscache.com/ic/discover/180?interpolation=lanczos-none&amp;output-format=jpg&amp;output-quality=70&amp;v=33b4f2&amp;downsize=655px:326px">
+        <a href="/s/Lisbon--Portugal?source=ds" class="link-reset" data-hook="discovery-card" data-id="Lisbon">
+          <div class="va-container va-container-v va-container-h">
+            <div class="va-middle text-center text-contrast">
+              <div class="h2">
+                <strong>Lisboa</strong>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12 rm-padding-sm">
+      <div class="discovery-card darken-on-hover discovery-listing" style="background-image:url('https://a2.muscache.com/im/pictures/71765598/fe6c5fd9_original.jpg?aki_policy=x_medium')">
+        <a href="/s/New-York--NY?source=ds" class="link-reset" data-hook="discovery-card" data-id="New York">
+          <div class="va-container va-container-v va-container-h">
+            <div class="va-middle text-center text-contrast">
+              <div class="h2">
+                <strong>Edimburgh</strong>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12 rm-padding-sm hide-sm">
+      <div class="discovery-card rm-padding-sm row-space-4 darken-on-hover " style="background-image:url('https://a1.muscache.com/ic/discover/84?interpolation=lanczos-none&amp;output-format=jpg&amp;output-quality=70&amp;v=33b4f2&amp;downsize=326px:326px');" data-sm-img-url="https://a1.muscache.com/ic/discover/85?interpolation=lanczos-none&amp;output-format=jpg&amp;output-quality=70&amp;v=33b4f2&amp;downsize=655px:326px">
+        <a href="/s/New-York--NY?source=ds" class="link-reset" data-hook="discovery-card" data-id="New York">
+          <div class="va-container va-container-v va-container-h">
+            <div class="va-middle text-center text-contrast">
+              <div class="h2">
+                <strong>Nueva York</strong>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12 rm-padding-sm hide-sm">
+      <div class="discovery-card rm-padding-sm row-space-4 darken-on-hover " style="background-image:url('https://a0.muscache.com/ic/discover/290?interpolation=lanczos-none&amp;output-format=jpg&amp;output-quality=70&amp;v=33b4f2&amp;downsize=326px:326px');" data-sm-img-url="https://a0.muscache.com/ic/discover/291?interpolation=lanczos-none&amp;output-format=jpg&amp;output-quality=70&amp;v=33b4f2&amp;downsize=655px:326px">
+        <a href="/s/New-York--NY?source=ds" class="link-reset" data-hook="discovery-card" data-id="New York">
+          <div class="va-container va-container-v va-container-h">
+            <div class="va-middle text-center text-contrast">
+              <div class="h2">
+                <strong>Rome</strong>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12 rm-padding-sm row-space-4">
+      <div class="discovery-card rm-padding-sm row-space-4 darken-on-hover " style="background-image:url('https://a1.muscache.com/ic/discover/358?interpolation=lanczos-none&amp;output-format=jpg&amp;output-quality=70&amp;v=33b4f2&amp;downsize=326px:326px');" data-sm-img-url="https://a1.muscache.com/ic/discover/359?interpolation=lanczos-none&amp;output-format=jpg&amp;output-quality=70&amp;v=33b4f2&amp;downsize=655px:326px">
+        <a href="/s/New-York--NY?source=ds" class="link-reset" data-hook="discovery-card" data-id="New York">
+          <div class="va-container va-container-v va-container-h">
+            <div class="va-middle text-center text-contrast">
+              <div class="h2">
+                <strong>Seville</strong>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-lg-8 col-md-12 rm-padding-sm">
+<div class="discovery-card rm-padding-sm row-space-4 darken-on-hover " style="background-image:url('https://a2.muscache.com/ic/discover/42?interpolation=lanczos-none&amp;output-format=jpg&amp;output-quality=70&amp;v=33b4f2&amp;downsize=655px:326px');" data-sm-img-url="https://a2.muscache.com/ic/discover/42?interpolation=lanczos-none&amp;output-format=jpg&amp;output-quality=70&amp;v=33b4f2&amp;downsize=655px:326px">        <a href="/s/New-York--NY?source=ds" class="link-reset" data-hook="discovery-card" data-id="New York">
+          <div class="va-container va-container-v va-container-h">
+            <div class="va-middle text-center text-contrast">
+              <div class="h2">
+                <strong>London</strong>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section class="comunity">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2 title">
+          <h3>Our comunity</h3>
+          <h4>Want to know which destinations have visited using our guides? What sights you can not miss in Brussels, Rome, Paris ... They will tell their trip!</h4>
+        </div>
+      </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-6">
+        <div class="testimonial green">
+          <div class="testimonial-image" style="background-image:url('https://waynabox.com/images/testimonials/29m.jpg');"></div>
+          <div class="testimonial-text">
+            "I¡Reto superado! Ha sido un viaje mágico, gracias a todo el equipo #wayna por hacerlo posible, ¡sois unos cracks!"
+          </div>
+          <div class="bottom-text">-Sandra<br>"PARIS"</div>
+        </div>
+        <div class="testimonial blue">
+          <div class="testimonial-image" style="background-image:url('https://waynabox.com/images/testimonials/26m.jpg');"></div>
+          <div class="testimonial-text">
+            "I¡Reto superado! Ha sido un viaje mágico, gracias a todo el equipo #wayna por hacerlo posible, ¡sois unos cracks!"
+          </div>
+          <div class="bottom-text">-Sandra<br>"PARIS"</div>
+        </div>
+        <div class="testimonial yellow">
+          <div class="testimonial-image" style="background-image:url('https://waynabox.com/images/testimonials/30m.jpg');"></div>
+          <div class="testimonial-text">
+            "I¡Reto superado! Ha sido un viaje mágico, gracias a todo el equipo #wayna por hacerlo posible, ¡sois unos cracks!"
+          </div>
+          <div class="bottom-text">-Sandra<br>"PARIS"</div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <div class="testimonial yellow">
+        <div class="testimonial-image" style="background-image:url('https://waynabox.com/images/testimonials/26m.jpg');"></div>
+        <div class="testimonial-text">
+          "I¡Reto superado! Ha sido un viaje mágico, gracias a todo el equipo #wayna por hacerlo posible, ¡sois unos cracks!"
+        </div>
+        <div class="bottom-text">-Sandra<br>"PARIS"</div>
+      </div>
+      <div class="testimonial green">
+        <div class="testimonial-image" style="background-image:url('https://waynabox.com/images/testimonials/30m.jpg');"></div>
+        <div class="testimonial-text">
+          "I¡Reto superado! Ha sido un viaje mágico, gracias a todo el equipo #wayna por hacerlo posible, ¡sois unos cracks!"
+        </div>
+        <div class="bottom-text">-Sandra<br>"PARIS"</div>
+      </div>
+      <div class="testimonial blue">
+        <div class="testimonial-image" style="background-image:url('https://waynabox.com/images/testimonials/29m.jpg');"></div>
+        <div class="testimonial-text">
+          "I¡Reto superado! Ha sido un viaje mágico, gracias a todo el equipo #wayna por hacerlo posible, ¡sois unos cracks!"
+        </div>
+        <div class="bottom-text">-Sandra<br>"PARIS"</div>
+      </div>
+  </div>
+  <div class="col-md-4 col-sm-6">
+    <div class="testimonial green">
+      <div class="testimonial-image" style="background-image:url('https://waynabox.com/images/testimonials/29m.jpg');"></div>
+      <div class="testimonial-text">
+        "I¡Reto superado! Ha sido un viaje mágico, gracias a todo el equipo #wayna por hacerlo posible, ¡sois unos cracks!"
+      </div>
+      <div class="bottom-text">-Sandra<br>"PARIS"</div>
+    </div>
+    <div class="testimonial yellow">
+      <div class="testimonial-image" style="background-image:url('https://waynabox.com/images/testimonials/30m.jpg');"></div>
+      <div class="testimonial-text">
+        "I¡Reto superado! Ha sido un viaje mágico, gracias a todo el equipo #wayna por hacerlo posible, ¡sois unos cracks!"
+      </div>
+      <div class="bottom-text">-Sandra<br>"PARIS"</div>
+    </div>
+    <div class="testimonial blue">
+      <div class="testimonial-image" style="background-image:url('https://waynabox.com/images/testimonials/26m.jpg');"></div>
+      <div class="testimonial-text">
+        "I¡Reto superado! Ha sido un viaje mágico, gracias a todo el equipo #wayna por hacerlo posible, ¡sois unos cracks!"
+      </div>
+      <div class="bottom-text">-Sandra<br>"PARIS"</div>
+    </div>
+  </div>
+  </div>
+</section>
+<section id="subscribe">
+  <div class="gray-wrap">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-5">
+          <h2>Do not miss our newsletter!</h2>
+          <p>Receive our news by email: destinations, dates available ...</p>
+        </div>
+        <div class="col-sm-7">
+          <form action="" id="noticeForm">
+            <input type="email" name="email" required="" placeholder="Enter your mail">
+            <input type="submit" value="Subscribe" id="sendbutton">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

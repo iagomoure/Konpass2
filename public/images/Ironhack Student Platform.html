@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)http://ironhack.com:3000/#/learning_unit/497 -->
+<html ng-app="IHplatform" lang="es" class="ng-scope wf-proximanova-i4-inactive wf-proximanova-i7-inactive wf-proximanova-n4-inactive wf-proximanova-n7-inactive wf-inactive"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Ironhack Student Platform</title>
+      <link href="./Ironhack Student Platform_files/application-ea91be8aab2d40267169555d085f94bb.css" media="all" rel="stylesheet">
+      <script src="./Ironhack Student Platform_files/application-85bd72bc1ec01fe3cae40aadd2878909.js"></script>
+      <meta content="authenticity_token" name="csrf-param">
+<meta content="qO0f96kT6BSdSeDKDiGAoYqbRCVFa3imZGmzOBe2prY=" name="csrf-token">
+
+    <script type="text/javascript" src="./Ironhack Student Platform_files/nfz6irz.js"></script>
+    <style type="text/css">.tk-proxima-nova,a,h1,h2,h3,h4,h5,h6,p{font-family:"proxima-nova",sans-serif;}</style><link rel="stylesheet" href="./Ironhack Student Platform_files/d"><script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    <!-- IE8 support for HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body id="body" cz-shortcut-listen="true">
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://ironhack.com:3000/#"><img src="./Ironhack Student Platform_files/logo.png" class="logo"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav margin_left">
+        <li class="active"><a href="http://ironhack.com:3000/#/">My courses</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="" class="dropdown-toggle login_area inline valign-m inline ng-binding" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img class="inline avatartop" ng-src="/system/images/users/avatars/thumb/439.png?1441885004" src="./Ironhack Student Platform_files/439.png">
+          Iago Moure <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://ironhack.com:3000/#/">My courses</a></li>
+            <li><a href="http://ironhack.com:3000/#/participants">Participants</a></li>
+            <li><a href="http://ironhack.com:3000/#/profile">Edit my profile</a></li>
+            <li class="divider"></li>
+            <li><a href="http://ironhack.com:3000/admin/logout" ng-click="shared.logout()" rel="nofollow" data-method="delete">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div ng-controller="alertsController" class="ng-scope">
+  <!-- ngIf: alerts.length -->
+</div>
+
+<!-- ngIf: shared.course --><div ng-if="shared.course" class="breadcrumbs ng-scope">
+    <div class="container">
+        <span class="font bold ng-binding">Web Development Bootcamp 3.1<!-- ngIf: route -->
+        </span>
+    </div>
+</div><!-- end ngIf: shared.course -->
+
+
+<div class="container padding_top padding_bottom">
+        <!-- ngInclude: undefined --><ng-include src="&#39;aside.html&#39;" class="ng-scope">
+<aside ng-controller="asideController" class="col-md-3 padding-left0 radius course ng-scope">
+            <!-- ngIf: shared.user --><div ng-if="shared.user" class="profile_box bg_dark_grey ng-scope">
+                <div class="row">
+                    <img ng-src="/system/images/users/avatars/thumb/439.png?1441885004" class="padding0 avatar col-md-4" src="./Ironhack Student Platform_files/439.png">
+                    <div class="col-md-8 quarter_margin_top">
+                    <h2 class="font medium bold padding0 margin0 color white ng-binding">Iago Moure</h2>
+                    <span class="font small margin0 padding0 block"> Course </span>
+    <!--            <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                        <span class="sr-only">60% Complete</span>
+                      </div>
+                    </div>  -->
+                </div>
+                </div>
+            </div><!-- end ngIf: shared.user -->
+            <!-- ngIf: shared.user --><div ng-if="shared.user" class="bg_light_grey ng-scope">
+                <ul class="margin0 listnone center social list-inline padding">
+                    <!-- ngIf: shared.user.twitter --><li ng-if="shared.user.twitter" class="ng-scope"><a ng-href="https://twitter.com/@iagomoure" target="_blank" href="https://twitter.com/@iagomoure">
+                      <i class="icon-twitter big font color circleicon semi_grey"></i>
+                    </a></li><!-- end ngIf: shared.user.twitter -->
+                    <!-- ngIf: shared.user.facebook -->
+                    <!-- ngIf: shared.user.github -->
+                    <!-- ngIf: shared.user.linkedin --><li ng-if="shared.user.linkedin" class="ng-scope"><a ng-href="http://linkedin.com//in/iagomoure" target="_blank" href="http://linkedin.com//in/iagomoure">
+                      <i class="icon-linkedin big font color circleicon semi_grey"></i>
+                    </a></li><!-- end ngIf: shared.user.linkedin -->
+                    <!-- ngIf: shared.user.blog --><li ng-if="shared.user.blog" class="ng-scope"><a ng-href="//iago_moure@yahoo.es" target="_blank" href="http://iago_moure@yahoo.es/">
+                      <i class="icon-pencil big font color circleicon semi_grey"></i>
+                    </a></li><!-- end ngIf: shared.user.blog -->
+
+                </ul>
+            </div><!-- end ngIf: shared.user -->
+            <div ng-controller="courseController" class="ng-scope">
+
+            <div class="bg_white courselist">
+                <ul accordion="" class="listnone"><div class="panel-group" ng-transclude="">
+
+                    <!-- ngRepeat: module in data.modules --><li accordion-group="" ng-repeat="module in data.modules" class="ng-scope ng-isolate-scope">  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a class="accordion-toggle" ng-click="toggleOpen()" accordion-transclude="heading"><span class="ng-binding ng-scope">
+                        Week 1
+                      </span><!--  <span class="font color blue">Week 1 - </span> The Basics -->
+                      </a>
+    </h4>
+  </div>
+  <div class="panel-collapse collapse" collapse="!isOpen" style="height: 0px;">
+	  <div ng-transclude="">
+                      <accordion-heading class="ng-scope"></accordion-heading>
+                      <ul class="opened_course small listnone bg_light_grey ng-scope">
+                        <!-- ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/231&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope bg_white">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/231" class="ng-binding ng-hide" href="http://ironhack.com:3000/#/learning_unit/231">Day 1</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding">Day 1</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/429&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/429" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/429">Slides - Review: How to confront errors</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Review: How to confront errors</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/430&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/430" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/430">Slides - Ruby Recap</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Ruby Recap</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/431&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/431" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/431">Slides - Review: Git - How to commit changes</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Review: Git - How to commit changes</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/236&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/236" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/236">Slides - Collections</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Collections</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/242&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/242" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/242">Slides - Pair Programming</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Pair Programming</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/432&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/432" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/432">PP Challenge - Collections</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">PP Challenge - Collections</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/433&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/433" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/433">Exercise - Collection methods</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Exercise - Collection methods</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/240&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope bg_white">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/240" class="ng-binding ng-hide" href="http://ironhack.com:3000/#/learning_unit/240">Day 2</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding">Day 2</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/234&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/234" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/234">Slides - Object Orientation</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Object Orientation</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/434&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/434" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/434">Slides - Git: Branches &amp; Merges</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Git: Branches &amp; Merges</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/180&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/180" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/180">PP Challenge - Employee payroll</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">PP Challenge - Employee payroll</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/226&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/226" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/226">Exercise - Iron Blog</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Exercise - Iron Blog</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/243&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope bg_white">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/243" class="ng-binding ng-hide" href="http://ironhack.com:3000/#/learning_unit/243">Day 3</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding">Day 3</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/435&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/435" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/435">Slides - Problem solving with data structures</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Problem solving with data structures</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/436&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/436" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/436">Slides - Git: Github and pushing</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Git: Github and pushing</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/241&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/241" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/241">Slides - Sharing Behaviour</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Sharing Behaviour</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/476&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/476" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/476">PP Challenge - ASCII Movie Rating</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">PP Challenge - ASCII Movie Rating</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/147&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/147" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/147">Exercise - A game of rooms</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Exercise - A game of rooms</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/246&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope bg_white">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/246" class="ng-binding ng-hide" href="http://ironhack.com:3000/#/learning_unit/246">Day 4</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding">Day 4</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/245&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/245" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/245">Slides - Single Responsibility Principle</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Single Responsibility Principle</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/437&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/437" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/437">Git: Solve merge conflicts</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Git: Solve merge conflicts</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/146&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/146" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/146">PP Challenge - SRT processing</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">PP Challenge - SRT processing</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/227&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/227" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/227">Exercise - Shopping cart</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Exercise - Shopping cart</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/248&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope bg_white">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/248" class="ng-binding ng-hide" href="http://ironhack.com:3000/#/learning_unit/248">Day 5</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding">Day 5</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/250&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/250" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/250">Slides - Chess Validator</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Chess Validator</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/153&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/153" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/153">Exercise - Chess validator</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Exercise - Chess validator</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/438&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/438" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/438">Week 1 Review</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Week 1 Review</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/251&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope bg_white">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/251" class="ng-binding ng-hide" href="http://ironhack.com:3000/#/learning_unit/251">Extra</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding">Extra</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/237&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/237" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/237">Slides - Gems</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Gems</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/238&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/238" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/238">Slides - Pry</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Pry</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/233&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/233" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/233">Slides - Finding solutions</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Finding solutions</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/474&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/474" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/474">Exercise - Six Degrees of Separation</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Exercise - Six Degrees of Separation</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units -->
+                        <!-- ngRepeat: exercise in module.exercises -->
+                     </ul>
+                    </div>
+  </div>
+</li><!-- end ngRepeat: module in data.modules --><li accordion-group="" ng-repeat="module in data.modules" class="ng-scope ng-isolate-scope">  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a class="accordion-toggle" ng-click="toggleOpen()" accordion-transclude="heading"><span class="ng-binding ng-scope">
+                        Week 2
+                      </span><!--  <span class="font color blue">Week 1 - </span> The Basics -->
+                      </a>
+    </h4>
+  </div>
+  <div class="panel-collapse collapse" collapse="!isOpen" style="height: 0px;">
+	  <div ng-transclude="">
+                      <accordion-heading class="ng-scope"></accordion-heading>
+                      <ul class="opened_course small listnone bg_light_grey ng-scope">
+                        <!-- ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/231&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope bg_white">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/231" class="ng-binding ng-hide" href="http://ironhack.com:3000/#/learning_unit/231">Day 1</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding">Day 1</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/272&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/272" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/272">Slides - Unit Testing</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Unit Testing</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/273&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/273" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/273">Slides - TDD</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - TDD</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/155&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/155" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/155">Exercise - The Lexiconomitron</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Exercise - The Lexiconomitron</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/458&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/458" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/458">Exercise - Sinatra TODO (part 1)</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Exercise - Sinatra TODO (part 1)</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/240&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope bg_white">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/240" class="ng-binding ng-hide" href="http://ironhack.com:3000/#/learning_unit/240">Day 2</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding">Day 2</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/266&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/266" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/266">Slides - HTTP</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - HTTP</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/441&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/441" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/441">Slides - Intro to Sinatra</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Intro to Sinatra</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/442&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/442" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/442">PP Challenge - ASCII art</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">PP Challenge - ASCII art</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/443&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/443" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/443">Forms with The Online Calculator</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Forms with The Online Calculator</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/243&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope bg_white">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/243" class="ng-binding ng-hide" href="http://ironhack.com:3000/#/learning_unit/243">Day 3</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding">Day 3</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/444&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/444" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/444">Slides - Intro to MVC with Sinatra</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Intro to MVC with Sinatra</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/445&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/445" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/445">Slides - More Sinatra</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - More Sinatra</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/446&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/446" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/446">PP Challenge - Secure Passwords</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">PP Challenge - Secure Passwords</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/459&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/459" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/459">Exercise - Sinatra TODO (part 2)</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Exercise - Sinatra TODO (part 2)</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/246&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope bg_white">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/246" class="ng-binding ng-hide" href="http://ironhack.com:3000/#/learning_unit/246">Day 4</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding">Day 4</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/455&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/455" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/455">Slides - Testing in web applications</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Testing in web applications</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/456&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/456" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/456">Exercise - Sinatra Blog</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Exercise - Sinatra Blog</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/248&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope bg_white">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/248" class="ng-binding ng-hide" href="http://ironhack.com:3000/#/learning_unit/248">Day 5</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding">Day 5</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/276&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/276" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/276">Slides - Movie Lovers</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Movie Lovers</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/421&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/421" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/421">Exercise - Movie Lovers!</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Exercise - Movie Lovers!</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/457&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/457" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/457">Week 2 Review</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Week 2 Review</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/251&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope bg_white">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/251" class="ng-binding ng-hide" href="http://ironhack.com:3000/#/learning_unit/251">Extra</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding">Extra</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/161&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/161" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/161">Exercise - Conway’s Game of Life!</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Exercise - Conway’s Game of Life!</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/477&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/477" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/477">Slides - Stubs and Fakes</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Stubs and Fakes</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/478&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/478" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/478">Slides - Testing Sinatra</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Testing Sinatra</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/252&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/252" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/252">Slides - Metaprogramming</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Metaprogramming</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units -->
+                        <!-- ngRepeat: exercise in module.exercises -->
+                     </ul>
+                    </div>
+  </div>
+</li><!-- end ngRepeat: module in data.modules --><li accordion-group="" ng-repeat="module in data.modules" class="ng-scope ng-isolate-scope">  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a class="accordion-toggle" ng-click="toggleOpen()" accordion-transclude="heading"><span class="ng-binding ng-scope">
+                        Week 3
+                      </span><!--  <span class="font color blue">Week 1 - </span> The Basics -->
+                      </a>
+    </h4>
+  </div>
+  <div class="panel-collapse collapse" collapse="!isOpen" style="height: 0px;">
+	  <div ng-transclude="">
+                      <accordion-heading class="ng-scope"></accordion-heading>
+                      <ul class="opened_course small listnone bg_light_grey ng-scope">
+                        <!-- ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/231&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope bg_white">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/231" class="ng-binding ng-hide" href="http://ironhack.com:3000/#/learning_unit/231">Day 1</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding">Day 1</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/286&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/286" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/286">Slides - HTML best practices</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - HTML best practices</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/469&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/469" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/469">Exercise - Cloning Github HTML Structure</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Exercise - Cloning Github HTML Structure</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/460&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/460" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/460">Implementing layouts with Bootstrap</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Implementing layouts with Bootstrap</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/405&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/405" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/405">Exercise - Cloning with Bootstrap</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Exercise - Cloning with Bootstrap</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/240&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope bg_white">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/240" class="ng-binding ng-hide" href="http://ironhack.com:3000/#/learning_unit/240">Day 2</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding">Day 2</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/289&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/289" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/289">Slides - CSS Best practices</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - CSS Best practices</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/290&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/290" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/290">Slides - CSS Methodologies</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - CSS Methodologies</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/293&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/293" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/293">Exercise - CSS day exercise</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Exercise - CSS day exercise</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/243&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope bg_white">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/243" class="ng-binding ng-hide" href="http://ironhack.com:3000/#/learning_unit/243">Day 3</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding">Day 3</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/399&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/399" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/399">Slides - JavaScript Recap</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - JavaScript Recap</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/400&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/400" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/400">Slides - JavaScript Problem Solving</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - JavaScript Problem Solving</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/416&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/416" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/416">Slides - Javascript Koans</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Javascript Koans</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/115&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/115" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/115">Introduction to Jasmine</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Introduction to Jasmine</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/470&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/470" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/470">Exercise - JS Caesar Cipher</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Exercise - JS Caesar Cipher</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/246&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope bg_white">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/246" class="ng-binding ng-hide" href="http://ironhack.com:3000/#/learning_unit/246">Day 4</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding">Day 4</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/330&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/330" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/330">Slides - OO Javascript</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - OO Javascript</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/401&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/401" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/401">Slides - Asynchrony &amp; Callbacks</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Asynchrony &amp; Callbacks</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/402&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/402" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/402">PP Challenge - Game of Thrones Async</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">PP Challenge - Game of Thrones Async</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/403&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/403" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/403">Exercise - JavaScript Cart</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Exercise - JavaScript Cart</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/404&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/404" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/404">Exercise - A Game of Rooms: JavaScript style</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Exercise - A Game of Rooms: JavaScript style</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/248&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope bg_white">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/248" class="ng-binding ng-hide" href="http://ironhack.com:3000/#/learning_unit/248">Day 5</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding">Day 5</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/407&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/407" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/407">Exercise - Quiz Game</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Exercise - Quiz Game</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/288&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/288" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/288">Exercise -Twitter Clone</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Exercise -Twitter Clone</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/461&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/461" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/461">Week 3 Review</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Week 3 Review</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/251&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope bg_white">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/251" class="ng-binding ng-hide" href="http://ironhack.com:3000/#/learning_unit/251">Extra</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding">Extra</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/484&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/484" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/484">Slides - Scopes &amp; Closures</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Scopes &amp; Closures</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/483&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/483" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/483">Slides - Organizing your code</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Organizing your code</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/485&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/485" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/485">Slides - Asynchrony &amp; Callbacks</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Asynchrony &amp; Callbacks</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/486&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/486" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/486">Slides - Reading files</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Reading files</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/488&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/488" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/488">Exercise - The Vikings</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Exercise - The Vikings</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units -->
+                        <!-- ngRepeat: exercise in module.exercises -->
+                     </ul>
+                    </div>
+  </div>
+</li><!-- end ngRepeat: module in data.modules --><li accordion-group="" ng-repeat="module in data.modules" class="ng-scope ng-isolate-scope">  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a class="accordion-toggle" ng-click="toggleOpen()" accordion-transclude="heading"><span class="ng-binding ng-scope">
+                        Week 4
+                      </span><!--  <span class="font color blue">Week 1 - </span> The Basics -->
+                      </a>
+    </h4>
+  </div>
+  <div class="panel-collapse collapse" collapse="!isOpen" style="height: 0px;">
+	  <div ng-transclude="">
+                      <accordion-heading class="ng-scope"></accordion-heading>
+                      <ul class="opened_course small listnone bg_light_grey ng-scope">
+                        <!-- ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/231&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope bg_white">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/231" class="ng-binding ng-hide" href="http://ironhack.com:3000/#/learning_unit/231">Day 1</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding">Day 1</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/91&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/91" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/91">Intro Rails</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Intro Rails</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/92&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/92" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/92">Our first project</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Our first project</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/93&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/93" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/93">HTTP</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">HTTP</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/95&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/95" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/95">MVC</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">MVC</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/96&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/96" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/96">Models</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Models</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/98&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/98" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/98">Seed the Database</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Seed the Database</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/97&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/97" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/97">CRUD</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">CRUD</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/99&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/99" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/99">A request using the database</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">A request using the database</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/298&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/298" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/298">Slides - Intro to RoR</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Intro to RoR</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/299&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/299" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/299">Slides - Our Brand New Project</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Our Brand New Project</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/300&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/300" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/300">Slides - The very first request</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - The very first request</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/301&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/301" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/301">Slides - Help and Documentation</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Help and Documentation</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/302&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/302" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/302">Slides - Introducing the models</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Introducing the models</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/409&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/409" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/409">Slides- Intro to relational databases</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides- Intro to relational databases</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/303&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/303" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/303">Slides - CRUD in active record part 1</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - CRUD in active record part 1</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/304&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/304" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/304">Slides - CRUD in active record part 2</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - CRUD in active record part 2</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/305&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/305" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/305">Slides - Seed the database</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Seed the database</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/306&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/306" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/306">Slides - A request using the database</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - A request using the database</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/462&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/462" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/462">Exercise - Address Book</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Exercise - Address Book</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/240&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope bg_white">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/240" class="ng-binding ng-hide" href="http://ironhack.com:3000/#/learning_unit/240">Day 2</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding">Day 2</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/100&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/100" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/100">A request with parameters</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">A request with parameters</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/101&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/101" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/101">Views, layout and assets</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Views, layout and assets</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/102&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/102" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/102">ActiveRecord Association</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">ActiveRecord Association</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/103&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/103" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/103">Displaying ActiveRecord Associations</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Displaying ActiveRecord Associations</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/104&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/104" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/104">Validations</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Validations</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/307&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/307" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/307">Slides - A request with parameters</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - A request with parameters</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/308&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/308" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/308">Slides - Views, layout and assets</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Views, layout and assets</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/309&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/309" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/309">Slides - Introducing the model entry</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Introducing the model entry</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/310&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/310" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/310">Slides - Displaying the project entries</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Displaying the project entries</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/196&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/196" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/196">** Exercise - URL shortener</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">** Exercise - URL shortener</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/243&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope bg_white">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/243" class="ng-binding ng-hide" href="http://ironhack.com:3000/#/learning_unit/243">Day 3</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding">Day 3</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/105&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/105" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/105">Create</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Create</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/106&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/106" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/106">Update</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Update</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/311&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/311" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/311">Slides - Model validation</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Model validation</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/312&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/312" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/312">Slides - Validation vs Creation</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Validation vs Creation</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/313&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/313" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/313">Slides - Creating entries part 1</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Creating entries part 1</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/314&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/314" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/314">Slides - Creating entries part 2</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Creating entries part 2</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/315&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/315" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/315">Slides - Paths and Urls</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Paths and Urls</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/316&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/316" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/316">Slides - Updating entries</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Updating entries</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/198&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/198" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/198">** Exercise - Auctions site</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">** Exercise - Auctions site</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/246&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope bg_white">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/246" class="ng-binding ng-hide" href="http://ironhack.com:3000/#/learning_unit/246">Day 4</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding">Day 4</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/107&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/107" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/107">Delete</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Delete</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/108&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/108" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/108">Partials</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Partials</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/109&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/109" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/109">Flash messages</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Flash messages</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/110&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/110" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/110">Extra ball - Undoing things</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Extra ball - Undoing things</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/317&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/317" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/317">Slides - Deleting entries</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Deleting entries</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/318&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/318" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/318">Slides - Flash messages</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Flash messages</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/319&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/319" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/319">Slides - Rails partials</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Rails partials</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/321&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/321" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/321">Slides - Adding People</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Adding People</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/199&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/199" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/199">** Exercise - Forum about movies</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">** Exercise - Forum about movies</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/248&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope bg_white">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/248" class="ng-binding ng-hide" href="http://ironhack.com:3000/#/learning_unit/248">Day 5</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding">Day 5</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/323&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/323" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/323">Slides - Music Concert Network</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Music Concert Network</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/464&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/464" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/464">Week 4 Review</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Week 4 Review</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/251&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope bg_white">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/251" class="ng-binding ng-hide" href="http://ironhack.com:3000/#/learning_unit/251">Extra</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding">Extra</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/320&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/320" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/320">Slides - Uploading Images</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Uploading Images</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/329&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/329" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/329">Slides - Action Mailer</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Action Mailer</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/489&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/489" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/489">Rails Cheat Sheet</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Rails Cheat Sheet</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/491&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/491" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/491">Slides - ActiveRecord Migrations</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - ActiveRecord Migrations</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/492&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/492" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/492">Exercise - The Gantt chart</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Exercise - The Gantt chart</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units -->
+                        <!-- ngRepeat: exercise in module.exercises -->
+                     </ul>
+                    </div>
+  </div>
+</li><!-- end ngRepeat: module in data.modules --><li accordion-group="" ng-repeat="module in data.modules" class="ng-scope ng-isolate-scope">  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a class="accordion-toggle" ng-click="toggleOpen()" accordion-transclude="heading"><span class="ng-binding ng-scope">
+                        Week 5
+                      </span><!--  <span class="font color blue">Week 1 - </span> The Basics -->
+                      </a>
+    </h4>
+  </div>
+  <div class="panel-collapse collapse" collapse="!isOpen" style="height: 0px;">
+	  <div ng-transclude="">
+                      <accordion-heading class="ng-scope"></accordion-heading>
+                      <ul class="opened_course small listnone bg_light_grey ng-scope">
+                        <!-- ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/231&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope bg_white">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/231" class="ng-binding ng-hide" href="http://ironhack.com:3000/#/learning_unit/231">Day 1</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding">Day 1</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/373&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/373" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/373">Slides - Javascript in the Browser</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Javascript in the Browser</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/410&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/410" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/410">Slides - DOM manipulation with jQuery</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - DOM manipulation with jQuery</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/412&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/412" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/412">Slides - Events with jQuery</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Events with jQuery</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/463&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/463" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/463">PP Challenge - Pizza Builder</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">PP Challenge - Pizza Builder</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/413&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/413" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/413">Exercise - jQuery Exercise</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Exercise - jQuery Exercise</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/240&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope bg_white">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/240" class="ng-binding ng-hide" href="http://ironhack.com:3000/#/learning_unit/240">Day 2</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding">Day 2</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/333&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/333" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/333">Slides - Ajax</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Ajax</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/342&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/342" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/342">Exercise - Spotify Artist Search</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Exercise - Spotify Artist Search</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/243&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope bg_white">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/243" class="ng-binding ng-hide" href="http://ironhack.com:3000/#/learning_unit/243">Day 3</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding">Day 3</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/334&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/334" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/334">Slides - Pitfalls in Javascript</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Pitfalls in Javascript</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/346&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/346" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/346">Slides - Geolocation</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Geolocation</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/465&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/465" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/465">Local Storage</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Local Storage</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/466&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/466" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/466">Audio/Video</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Audio/Video</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/471&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/471" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/471">Exercise - Places I've been</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Exercise - Places I've been</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/246&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope bg_white">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/246" class="ng-binding ng-hide" href="http://ironhack.com:3000/#/learning_unit/246">Day 4</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding">Day 4</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/475&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/475" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/475">Slides - Browser Javascript Structure</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Browser Javascript Structure</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/487&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/487" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/487">Exercise - Ironhack Pokedex</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Exercise - Ironhack Pokedex</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/248&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope bg_white">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/248" class="ng-binding ng-hide" href="http://ironhack.com:3000/#/learning_unit/248">Day 5</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding">Day 5</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/394&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/394" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/394">Exercise - Spotify Player</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Exercise - Spotify Player</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/251&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope bg_white">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/251" class="ng-binding ng-hide" href="http://ironhack.com:3000/#/learning_unit/251">Extra</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding">Extra</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/493&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/493" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/493">Slides - Debugging JavaScript</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Debugging JavaScript</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/496&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/496" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/496">Slides - Managing the DOM with JavaScript</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Managing the DOM with JavaScript</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/497&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope selected">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/497" class="ng-binding" href="./Ironhack Student Platform_files/Ironhack Student Platform.html">Slides - Google Maps in JavaScript</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Google Maps in JavaScript</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units -->
+                        <!-- ngRepeat: exercise in module.exercises -->
+                     </ul>
+                    </div>
+  </div>
+</li><!-- end ngRepeat: module in data.modules --><li accordion-group="" ng-repeat="module in data.modules" class="ng-scope ng-isolate-scope">  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a class="accordion-toggle" ng-click="toggleOpen()" accordion-transclude="heading"><span class="ng-binding ng-scope">
+                        Week 6
+                      </span><!--  <span class="font color blue">Week 1 - </span> The Basics -->
+                      </a>
+    </h4>
+  </div>
+  <div class="panel-collapse collapse" collapse="!isOpen" style="height: 0px;">
+	  <div ng-transclude="">
+                      <accordion-heading class="ng-scope"></accordion-heading>
+                      <ul class="opened_course small listnone bg_light_grey ng-scope">
+                        <!-- ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/231&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope bg_white">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/231" class="ng-binding ng-hide" href="http://ironhack.com:3000/#/learning_unit/231">Day 1</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding">Day 1</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/350&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/350" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/350">Slides - APIs</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - APIs</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/424&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/424" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/424">Slides - API Testing with Postman</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - API Testing with Postman</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/425&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/425" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/425">Exercise - Video Game Tournaments</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Exercise - Video Game Tournaments</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/240&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope bg_white">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/240" class="ng-binding ng-hide" href="http://ironhack.com:3000/#/learning_unit/240">Day 2</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding">Day 2</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/352&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/352" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/352">Slides - Authentication</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Authentication</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/428&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/428" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/428">Slides - Authorization</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Authorization</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/359&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/359" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/359">Slides - Devise</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Devise</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/353&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/353" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/353">Exercise - Auth</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Exercise - Auth</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/243&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope bg_white">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/243" class="ng-binding ng-hide" href="http://ironhack.com:3000/#/learning_unit/243">Day 3</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding">Day 3</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/423&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/423" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/423">Slides - API Testing with RSpec</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - API Testing with RSpec</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/351&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/351" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/351">Slides - ActiveRecord &amp; SQL</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - ActiveRecord &amp; SQL</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/354&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/354" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/354">Exercise - Starcraft Matches API</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Exercise - Starcraft Matches API</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/246&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope bg_white">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/246" class="ng-binding ng-hide" href="http://ironhack.com:3000/#/learning_unit/246">Day 4</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding">Day 4</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/356&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/356" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/356">Slides - Emails</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Emails</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/358&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/358" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/358">Slides - Deployment</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Deployment</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/427&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/427" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/427">Exercise - Deploy your Auction Site</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Exercise - Deploy your Auction Site</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/248&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope bg_white">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/248" class="ng-binding ng-hide" href="http://ironhack.com:3000/#/learning_unit/248">Day 5</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding">Day 5</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/426&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/426" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/426">Exercise - BBQ Planner</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Exercise - BBQ Planner</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/251&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope bg_white">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/251" class="ng-binding ng-hide" href="http://ironhack.com:3000/#/learning_unit/251">Extra</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding">Extra</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/357&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/357" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/357">Slides - Background Jobs</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Background Jobs</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units --><li ng-class="{ selected: isActive(&#39;/learning_unit/355&#39;) , bg_white: learningUnit.block==&#39;separator&#39;}" ng-repeat="learningUnit in module.learning_units" class="ng-scope">
+                          <a ng-hide="learningUnit.block==&#39;separator&#39;" ng-click="goToTop()" ng-href="#/learning_unit/355" class="ng-binding" href="http://ironhack.com:3000/#/learning_unit/355">Slides - Extending Rails</a>
+                           <a ng-show="learningUnit.block==&#39;separator&#39;" disable="" class="ng-binding ng-hide">Slides - Extending Rails</a>
+                        </li><!-- end ngRepeat: learningUnit in module.learning_units -->
+                        <!-- ngRepeat: exercise in module.exercises -->
+                     </ul>
+                    </div>
+  </div>
+</li><!-- end ngRepeat: module in data.modules -->
+
+                </div></ul>
+            </div>
+            </div>
+        </aside>
+</ng-include>
+        <!-- ngView: undefined --><ng-view class="ng-scope">
+  <section class="col-md-9 course_navigation padding_left ng-scope">
+            <div tabset="" justified="true" class="ng-isolate-scope">
+  <ul class="nav nav-tabs nav-justified" ng-class="{&#39;nav-stacked&#39;: vertical, &#39;nav-justified&#39;: justified}" ng-transclude="">
+              <li ng-class="{active: active, disabled: disabled}" tab="" heading="Content" class="ng-isolate-scope active">
+  <a ng-click="select()" tab-heading-transclude="" class="ng-binding">Content</a>
+</li>
+            </ul>
+  <div class="tab-content">
+    <!-- ngRepeat: tab in tabs --><div class="tab-pane ng-scope active" ng-repeat="tab in tabs" ng-class="{active: tab.active}" tab-content-transclude="tab">
+    
+                <!-- ngInclude: undefined --><ng-include src="&#39;content.html&#39;" class="ng-scope">
+   <a ng-show="shared.user.is_admin" ng-href="" ng-click="toggleShowMode()" class="ng-scope ng-hide">Toggle view mode</a>
+  <!-- ngRepeat: resource in data.resources --><div ng-repeat="resource in data.resources" class="ng-scope">
+    <article ng-hide="showCode" class="content font color dark_grey ng-binding" target-blank="" highlight="" ng-bind-html="resource.content | markdownWithHtml  "><iframe src="./Ironhack Student Platform_files/embed.html" frameborder="0" width="100%" height="541" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></article>
+    <form ng-show="showCode" novalidate="" class="center ng-pristine ng-valid ng-hide">
+      <textarea ng-show="showCode" class="content font color dark_grey width100 ng-pristine ng-untouched ng-valid ng-hide" ng-auto-expand="" target-blank="" highlight="" ng-model="resource.content" style="height: 26px;">
+      </textarea>
+       <button class="bg_blue font color white bold small quarter_padding quarter_margin_top quarter_margin_bottom width100" ng-click="updateLearningResource(resource);">Update</button>
+    </form>
+
+    <!-- ngIf: !resource.feedback && !showCode --><form ng-if="!resource.feedback &amp;&amp; !showCode" novalidate="" class="center  ng-pristine ng-valid ng-scope">
+        <h6 class="font margin_top inline thin big margin_right ">Do you think this info was <strong>useful</strong> and <strong>complete</strong>?</h6>
+        <span ng-mouseleave="reset()" ng-keydown="onKeydown($event)" tabindex="0" role="slider" aria-valuemin="0" aria-valuemax="5" aria-valuenow="" value="feedback.rating" max="5" ng-model="feedback.rating" on-leave="resource.overStar = null" on-hover="hoveringOver(resource, value)" state-on="&#39;glyphicon glyphicon glyphicon-star font big color light_blue&#39;" state-off="&#39;glyphicon glyphicon glyphicon-star font big&#39;" class="ng-isolate-scope ng-valid">
+    <!-- ngRepeat: r in range track by $index --><i ng-repeat="r in range track by $index" ng-mouseenter="enter($index + 1)" ng-click="rate($index + 1)" class="glyphicon ng-scope glyphicon-star font big" ng-class="$index &lt; value &amp;&amp; (r.stateOn || &#39;glyphicon-star&#39;) || (r.stateOff || &#39;glyphicon-star-empty&#39;)">
+        <span class="sr-only ng-binding">( )</span>
+    </i><!-- end ngRepeat: r in range track by $index --><i ng-repeat="r in range track by $index" ng-mouseenter="enter($index + 1)" ng-click="rate($index + 1)" class="glyphicon ng-scope glyphicon-star font big" ng-class="$index &lt; value &amp;&amp; (r.stateOn || &#39;glyphicon-star&#39;) || (r.stateOff || &#39;glyphicon-star-empty&#39;)">
+        <span class="sr-only ng-binding">( )</span>
+    </i><!-- end ngRepeat: r in range track by $index --><i ng-repeat="r in range track by $index" ng-mouseenter="enter($index + 1)" ng-click="rate($index + 1)" class="glyphicon ng-scope glyphicon-star font big" ng-class="$index &lt; value &amp;&amp; (r.stateOn || &#39;glyphicon-star&#39;) || (r.stateOff || &#39;glyphicon-star-empty&#39;)">
+        <span class="sr-only ng-binding">( )</span>
+    </i><!-- end ngRepeat: r in range track by $index --><i ng-repeat="r in range track by $index" ng-mouseenter="enter($index + 1)" ng-click="rate($index + 1)" class="glyphicon ng-scope glyphicon-star font big" ng-class="$index &lt; value &amp;&amp; (r.stateOn || &#39;glyphicon-star&#39;) || (r.stateOff || &#39;glyphicon-star-empty&#39;)">
+        <span class="sr-only ng-binding">( )</span>
+    </i><!-- end ngRepeat: r in range track by $index --><i ng-repeat="r in range track by $index" ng-mouseenter="enter($index + 1)" ng-click="rate($index + 1)" class="glyphicon ng-scope glyphicon-star font big" ng-class="$index &lt; value &amp;&amp; (r.stateOn || &#39;glyphicon-star&#39;) || (r.stateOff || &#39;glyphicon-star-empty&#39;)">
+        <span class="sr-only ng-binding">( )</span>
+    </i><!-- end ngRepeat: r in range track by $index -->
+</span>
+        <textarea ng-model="feedback.comment" class="form-control ng-pristine ng-untouched ng-valid" rows="3" placeholder="Feedback..."></textarea>
+        <button class="bg_blue font color white bold small quarter_padding quarter_margin_top width100" ng-click="createFeedback(resource, feedback);">Send</button>
+    </form><!-- end ngIf: !resource.feedback && !showCode -->
+  </div><!-- end ngRepeat: resource in data.resources -->
+  <!-- ngIf: data.assessment && data.assessment.done -->
+  <!-- ngIf: data.assessment && !data.assessment_enable -->
+  <!-- ngIf: data.assessment && !data.assessment.done && data.assessment_enable -->
+</ng-include>
+              </div><!-- end ngRepeat: tab in tabs -->
+  </div>
+</div>
+        </section>
+</ng-view>
+</div>
+
+
+    <section class="reminders doublepadding container">
+
+    </section>
+<footer>
+        <div class="container">
+            <img src="./Ironhack Student Platform_files/logo.png" class="inline">
+            <span class="inline big semi_margin_left">
+                © 2014
+            </span>
+            <span class="pull-right">
+         <!--       The most hardcoded awesome experience in the world. -->
+            </span>
+        </div>
+</footer>
+
+    <script>
+     $('.selectpicker').selectpicker({
+      style: 'btn-info',
+      size: 4
+  });
+    </script>
+
+<script type="text/ng-template" id="aside.html">
+<aside ng-controller="asideController" class="col-md-3 padding-left0 radius course">
+            <div ng-if="shared.user" class="profile_box bg_dark_grey">
+                <div class="row">
+                    <img ng-src="{{shared.user.avatar_thumb}}" class="padding0 avatar col-md-4">
+                    <div class="col-md-8 quarter_margin_top">
+                    <h2 class="font medium bold padding0 margin0 color white">{{shared.user.name}}</h2>
+                    <span class="font small margin0 padding0 block"> Course </span>
+    <!--            <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                        <span class="sr-only">60% Complete</span>
+                      </div>
+                    </div>  -->
+                </div>
+                </div>
+            </div>
+            <div ng-if="shared.user" class="bg_light_grey">
+                <ul class="margin0 listnone center social list-inline padding">
+                    <li ng-if="shared.user.twitter"><a ng-href="https://twitter.com/{{shared.user.twitter}}" target="_blank">
+                      <i class="icon-twitter big font color circleicon semi_grey"></i>
+                    </a></li>
+                    <li ng-if="shared.user.facebook"><a ng-href="http://facebook.com/{{shared.user.facebook}}" target="_blank">
+                      <i class="icon-facebook big font color circleicon semi_grey"></i>
+                    </a></li>
+                    <li ng-if="shared.user.github"><a ng-href="https://github.com/{{shared.user.github}}" target="_blank">
+                      <i class="icon-github-alt big font color circleicon semi_grey"></i>
+                    </a></li>
+                    <li ng-if="shared.user.linkedin"><a ng-href="http://linkedin.com/{{shared.user.linkedin}}" target="_blank">
+                      <i class="icon-linkedin big font color circleicon semi_grey"></i>
+                    </a></li>
+                    <li ng-if="shared.user.blog"><a ng-href="//{{shared.user.blog}}" target="_blank">
+                      <i class="icon-pencil big font color circleicon semi_grey"></i>
+                    </a></li>
+
+                </ul>
+            </div>
+            <div ng-controller="courseController">
+
+            <div class="bg_white courselist">
+                <ul accordion class="listnone">
+
+                    <li accordion-group ng-repeat="module in data.modules">
+                      <accordion-heading >
+                        {{module.title}}
+                      <!--  <span class="font color blue">Week 1 - </span> The Basics -->
+                      </accordion-heading>
+                      <ul class="opened_course small listnone bg_light_grey">
+                        <li ng-class="{ selected: isActive('/learning_unit/{{learningUnit.id}}') , bg_white: learningUnit.block=='separator'}" ng-repeat="learningUnit in module.learning_units">
+                          <a ng-hide="learningUnit.block=='separator'" ng-click="goToTop()" ng-href="#/learning_unit/{{learningUnit.id}}">{{learningUnit.title}}</a>
+                           <a ng-show="learningUnit.block=='separator'" disable >{{learningUnit.title}}</a>
+                        </li>
+                        <li ng-class="{ selected: isActive('/exercises/{{exercise.id}}') }" ng-repeat="exercise in module.exercises">
+                          <a ng-click="goToTop()" ng-href="#/exercises/{{exercise.id}}">{{exercise.title}}</a>
+                        </li>
+                     </ul>
+                    </li accordion-group>
+
+                </ul>
+            </div>
+            </div>
+        </aside>
+</script>
+
+<script type="text/ng-template" id="course.html">
+
+</script>
+
+<script type="text/ng-template" id="profile.html">
+<section class="content center padding_top padding_bottom">
+  <h1 class="font book insane bold center padding_bottom margin0 padding0 color dark_grey">Edit my profile
+        <h3 class="font color grey margin_bottom">Fill out your profile information</h3>
+  </h1>
+    <div class="edit_profile col-md-6 col-centered  striped_bordered">
+        <form novalidate>
+            <h3 class="font color semi_padding_left semi_padding_top grey text-left">Personal Info</h3>
+          <div class="form-group padding text-left">
+            <label for="exampleInputEmail1">Your Name</label>
+            <input ng-model="user.name" type="text" class="form-control"  placeholder="Enter name"></br>
+            <label for="exampleInputEmail1">Your Email</label>
+            <input ng-model="user.email" type="email" class="form-control" placeholder="Enter email">
+          </div>
+          <div class="change_avatar">
+            <img ng-src="{{shared.user.avatar_thumb}}" class="avatarbig">
+            <h3> Change your avatar </h3>
+<!--            <button class="blue white font big color bold">Change it here</button> -->
+            <span class="btn btn-default btn-file bg_blue big color bold">
+             Change it here <input role="button" ng-file-select="files = $files" type="file"  />
+            </span>
+        </div>
+          <h3 class="font color grey semi_padding_left light_grey text-left">Your channels</h3>
+          <div class="form-group padding text-left">
+            <label for="exampleInputEmail1"><i class="icon-pencil"></i> Blog</label>
+            <input ng-model="user.blog" type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email"></br>
+            <label for="exampleInputEmail1"><i class="icon-twitter"></i> Twitter</label>
+            <input ng-model="user.twitter" type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter your twitter"></br>
+            <label for="exampleInputEmail1"><i class="icon-github-alt"></i> Github</label>
+            <input ng-model="user.github" type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter your Github"></br>
+            <label for="exampleInputPassword1"><i class="icon-linkedin"></i> Linkedin</label>
+            <input ng-model="user.linkedin" type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter your Linkedin">
+          </div>
+          <h3 class="font color grey semi_padding_left light_grey text-left">Change your password </h3>
+          <div class="form-group padding text-left">
+            <label><i></i> New password</label>
+            <input ng-model="user.password" type="password" class="form-control" id="exampleInputEmail1" placeholder="Enter new password"></br>
+            <label><i></i> Password confirmation</label>
+            <input ng-model="user.password_confirmation" type="password" class="form-control" id="exampleInputEmail1" placeholder="Enter password confirmation"></br>
+          </div>
+          <button ng-click="update(user, files)" class="button margin_bottom blue white font color bold big width100">Update</button>
+        </form>
+        </div>
+    </div>
+  </div>
+</section>
+</script>
+
+<script type="text/ng-template" id="content.html">
+   <a ng-show="shared.user.is_admin" ng-href="" ng-click="toggleShowMode()">Toggle view mode</a>
+  <div ng-repeat="resource in data.resources">
+    <article ng-hide="showCode" class="content font color dark_grey" target-blank highlight ng-bind-html="resource.content | markdownWithHtml  ">
+
+    </article>
+    <form ng-show="showCode" novalidate class="center">
+      <textarea ng-show="showCode" class="content font color dark_grey width100"  ng-auto-expand target-blank highlight ng-model="resource.content">
+
+      </textarea>
+       <button class="bg_blue font color white bold small quarter_padding quarter_margin_top quarter_margin_bottom width100" ng-click="updateLearningResource(resource);" >Update</button>
+    </form>
+
+    <form ng-if="!resource.feedback && !showCode" novalidate class="center ">
+        <h6 class="font margin_top inline thin big margin_right ">Do you think this info was <strong>useful</strong> and <strong>complete</strong>?</h6>
+        <rating value="feedback.rating" max="5" ng-model="feedback.rating"
+            on-leave="resource.overStar = null" on-hover="hoveringOver(resource, value)"
+            state-on="'glyphicon glyphicon glyphicon-star font big color light_blue'"
+            state-off="'glyphicon glyphicon glyphicon-star font big'">
+        </rating>
+        <textarea ng-model="feedback.comment" class="form-control" rows="3" placeholder="Feedback..."></textarea>
+        <button class="bg_blue font color white bold small quarter_padding quarter_margin_top width100" ng-click="createFeedback(resource, feedback);" >Send</button>
+    </form>
+  </div>
+  <div ng-if="data.assessment && data.assessment.done" class="font color white bold alert-success quarter_padding semi_padding_left">Congratulations! You´ve passed</div>
+  <div ng-if="data.assessment && !data.assessment_enable" class="font color white bold alert-warning quarter_padding semi_padding_left">Assessment disabled</div>
+  <form ng-if="data.assessment && !data.assessment.done && data.assessment_enable" novalidate>
+      <h6 class="font margin_top inline thin big margin_right"></h6>
+      <span ng-if="data.assessment.tried" class="font big color red">Try again!</span>
+      <div ng-repeat="question in data.assessment.questions" class="quarter_margin_top quarter_margin_left">
+        <span class="font thin" highlight target-blank ng-bind-html="question.description | markdown"></span>
+        <div ng-repeat="answer in question.answers" class=" margin_right quarter_margin_left">
+        <input ng-if="question.multiple" type="checkbox" ng-model="answer.selected" ng-value="true" />
+
+
+        <input ng-if="!question.multiple" name="{{question.id}}" type="radio" ng-model="question.selected" ng-value="answer.id" />
+        {{answer.description}}
+        </div>
+      </div>
+      <button class="bg_blue font color white bold small quarter_padding quarter_margin_top width100" ng-click="sendAssessment(data.assessment);" >Send</button>
+  </form>
+</script>
+
+<script type="text/ng-template" id="learning_unit.html">
+  <section class="col-md-9 course_navigation padding_left">
+            <div tabset justified="true" >
+              <div tab heading="Content" >
+                <ng-include src="'content.html'"></ng-include>
+              </div>
+            </div>
+        </section>
+</script>
+
+<script type="text/ng-template" id="participants.html">
+   <section class="col-md-9 course_navigation padding_left">
+            <article class="content">
+                <h1 class="semi_margin_bottom">Participants
+                </h1>
+                <article class="margin_bottom margin_top">
+                    <div class="row listnone">
+                      <div class="col-md-4" ng-repeat="user in data.participants">
+                        <div class="panel panel-default">
+                          <div class="panel-body participant border-top">
+                            <img ng-src="{{user.avatar_thumb}}" class="col-md-5">
+                            <span class="col-md-7 semi_padding_top font color bold bi">{{user.name}}</span>
+                          </div>
+                          <div class="panel-footer bg_light_grey padding0">
+                            <div class="bg_light_grey quarter_padding_top quarter_padding_bottom">
+                                <ul class="margin0 listnone center social list-inline">
+                                  <li ng-if="user.twitter"><a ng-href="https://twitter.com/{{user.twitter}}" target="_blank">
+                                    <i class="icon-twitter big font color circleicon semi_grey"></i>
+                                  </a></li>
+                                  <li ng-if="user.facebook"><a ng-href="http://facebook.com/{{user.facebook}}" target="_blank">
+                                    <i class="icon-facebook big font color circleicon semi_grey"></i>
+                                  </a></li>
+                                  <li ng-if="user.github"><a ng-href="https://github.com/{{user.github}}" target="_blank">
+                                    <i class="icon-github-alt big font color circleicon semi_grey"></i>
+                                  </a></li>
+                                  <li ng-if="user.linkedin"><a ng-href="http://linkedin.com/{{user.linkedin}}" target="_blank">
+                                    <i class="icon-linkedin big font color circleicon semi_grey"></i>
+                                  </a></li>
+                                  <li ng-if="user.blog"><a ng-href="//{{user.blog}}" target="_blank">
+                                    <i class="icon-pencil big font color circleicon semi_grey"></i>
+                                  </a></li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                </article>
+            </article>
+        </section>
+</script>
+
+<script type="text/ng-template" id="course_select.html">
+  <section class="content center padding_top padding_bottom">
+    <h1 class="font book big center padding_bottom color dark_grey">Please select one of your courses and <span class="font bold">start coding. </span></h1>
+    <div class="row center">
+        <article class="col-md-4 inline floatnone valign-t" ng-repeat="edition in data.course_editions">
+            <a  ng-click="selectEdition(edition)" ng-href="#/course">
+            <div class="panel panel-default">
+              <div class="panel-body codepanel">
+                <h1 class="font huge bold color white">{{edition.type | capitalize}}
+                    <span class="font big book block color  white">Bootcamp </span> </h1>
+                    <span class="font small regular block color italic light_blue"> {{edition.city | capitalize}} <span ng-show="edition.start_at"> ({{ edition.start_at }})</span> </span>
+              </div>
+              </a>
+              <div class="panel-footer text-left">
+           <!--       <h4 class="big font color bold grey">70% COMPLETED</h4>
+                  <div class="progress light">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+                        <span class="sr-only">60% Complete</span>
+                      </div>
+                  </div> -->
+
+                  <hr class="blue_bg">
+                  <div class="data semi_padding_bottom">
+                      <span class="font color semi_grey small"> {{edition.description | capitalize}}</span>
+                  </div>
+              </div>
+            </div>
+        </article>
+    </div>
+  </section>
+</script>
+
+
+
+
+
+
+</body></html>

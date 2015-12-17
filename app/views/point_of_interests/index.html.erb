@@ -1,0 +1,17 @@
+<div class="container">
+  <ul>
+    <% @points.each do |point|%>
+      <div class="field form-group citieslist">
+        <li><%= point.name %></li>
+        <li><%= point.description %></li>
+        <li><%= point.rating %></li>
+        <li><%= point.latitude %></li>
+        <li><%= point.longitude %></li>
+      </div>
+    <% end %>
+  </ul>
+  <a href="/panelcontrol" class="" type="submit">Back</a>
+</div>
+<div class="row">
+    <%= render 'shared/foot' %>
+  </div>

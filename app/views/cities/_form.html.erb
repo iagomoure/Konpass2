@@ -1,0 +1,33 @@
+<% if @city.errors.any? %>
+	<ul>
+		<% @city.errors.full_messages.each do |error_msg|%>
+			<li><%= error_msg %></li>
+		<% end %>
+	</ul>
+<% end %>
+<%= form_for [@city] do |c| %>
+  <div class="field form-group form-singup">
+    <%= c.label :name %>
+    </br>
+  	<%= c.text_field :name, :class=>'form-control text singup' %>
+  </div>
+  <div class="field form-group form-singup">
+	<%= c.label :description %>
+  </br>
+	<%= c.text_area :description, :class=>'form-control text singup'  %>
+	</div>
+  <div class="field form-group form-singup">
+	<%= c.label :latitude %>
+  </br>
+	<%= c.text_field :latitude, :class=>'form-control text singup'  %>
+	</div>
+  <div class="field form-group form-singup">
+  <%= c.label :longitude %>
+  </br>
+	<%= c.text_field :longitude, :class=>'form-control text singup'  %>
+	</div>
+<div class="field form-group form-singup">
+	<%= c.submit 'Save', :class=>'btn btn-info btn-singup' %>
+  <%= link_to 'Back', :back %>
+</div>
+<% end %>

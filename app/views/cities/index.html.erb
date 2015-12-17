@@ -1,0 +1,21 @@
+<div class="container showCity">
+  <table class="table table-hover">
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+      <% @cities.each do |city| %>
+      <tr>
+        <td><%= link_to(city.id, city_path(city)) %></td>
+        <td><%= link_to(city.name, city_path(city)) %></td>
+        <td><%= link_to('Edit', edit_city_path(city.id), class:'btn btn-info btn-singup btn-action') %></td>
+        <td><%= link_to('Delete',city_path(city.id), method: 'delete', data:{confirm: 'Are you sure?'}, class:'btn btn-info btn-singup btn-action') %><td>
+      </tr>
+    <% end %>
+  </table>
+  <%= link_to('Create new city', new_city_path, class:'btn btn-info btn-singup btn-action')%>
+</br>
+  <a href="/panelcontrol" class="" type="submit">Go Back</a>
+</div>

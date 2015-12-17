@@ -1,0 +1,64 @@
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-md-offset-1">
+        <div class="select">
+          <select class="language-selector" aria-labelledby="language-selector-label">
+            <option value="de">Deutsch</option>
+            <option value="en" selected="">English</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+            <option value="it">Italiano</option>
+            <option value="nl">Nederlands</option>
+            <option value="pt">Português</option>
+            <option value="ja">日本語</option>
+          </select>
+        </div>
+        <div class="select">
+          <select class="currency-selector" aria-labelledby="currency-selector-label">
+            <option value="EUR" selected="">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="USD">USD</option>
+          </select>
+        </div>
+        <div id="instant-help-footer" class="">
+          <h4>¿Necesitas ayuda?</h4>
+          <a class="link-help" href="/help">Visita el centro de ayuda</a>
+          <div>
+            Atención telefónica: +34 91 123 45 67
+          </div>
+        </div>
+    </div>
+    <div class="col-sm-3 about">
+      <h5 class="company">Company</h5>
+      <ul class="navigation">
+        <li><a href="#">Abaut us</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="#">Work with us</a></li>
+        <li><a href="#">Terms and condictions</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+    <div class="col-sm-3 about">
+      <h5 class="company">Access</h5>
+      <ul class="navigation">
+        <li><a href="/users/sign_in">Sign in</a></li>
+        <li><%= link_to 'Logout', destroy_user_session_path(:authenticity_token => form_authenticity_token()), method: 'delete' %></li>
+      </ul>
+    </div>
+      <hr class="footer-divider">
+    </div>
+    <div class="row">
+      <h5>Follow us</h5>
+      <div class="social">
+        <ul>
+          <li><a target="_blank" href="#" class="fb"></a></li>
+          <li><a target="_blank" href="#" class="tw"></a></li>
+          <li><a target="_blank" href="#" class="inst"></a></li>
+          <li><a target="_blank" href="#" class="gplus"></a></li>
+        </ul>
+      </div>
+      <h6>2015©&nbsp;Ironhack powered</h6>
+    </div>
+  </div>
+</footer>

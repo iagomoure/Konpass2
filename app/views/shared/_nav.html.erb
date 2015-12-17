@@ -1,0 +1,39 @@
+<nav>
+  <div class="col-md-3 col-sm-3">
+    <a href="http://localhost:3000" class="logo">
+      <img src="http://localhost:3000/images/logotype.png" alt="logo">
+    </a>
+  </div>
+  <div class="col-md-3 col-sm-3">
+    <% if user_signed_in? %>
+      <h5>Welcome <%= current_user.name %></h5>
+      <h6><%= current_user.email %></h6>
+    <% end %>
+  </div>
+  <div class="col-md-6 col-sm-6">
+    <div class="dropdown">
+      <ul>
+        <li>
+          <a href="/" class="dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" data-target="/">
+            Home</a>
+        </li>
+        <li>
+          <a class="dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#">
+            Info
+            <b class="caret"></b>
+          </a>
+          <ul id="submenu" class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+            <li><a tabindex="-1" href="about">About</a></li>
+            <li><a tabindex="-1" href="#">Another action</a></li>
+            <li><a tabindex="-1" href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a tabindex="-1" href="#">Help</a></li>
+          </ul>
+        </li>
+        <li>
+          <a class="dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/contact">
+            Contact</a>
+        </li>
+      </ul>
+  </div>
+</nav>
